@@ -1,0 +1,14 @@
+name: DISCUSS-RAG
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.21
+  - pip
+  - numpy
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu118
+      - torch==2.6.*
+      - torchvision==0.21.*
+      - torchaudio==2.6.*
+      - -r requirements.txt    
